@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Created with IntelliJ IDEA.
  * User: twer
@@ -15,11 +17,10 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 @RequestMapping("/aami")
-public class AMMIController {
+public class AAMIController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String onPage(ModelMap model) {
-        model.put("brand","aami");
+    public String onPage(HttpServletRequest request) {
         return "index";
     }
 }

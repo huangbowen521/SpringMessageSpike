@@ -15,9 +15,16 @@
     </bean>
 
     <bean id="messageSource"
-          class="org.springframework.context.support.ResourceBundleMessageSource">
+          class="com.thoughtworks.config.SessionMessageSource">
+        <property name="parentMessageSource">
+            <bean class="org.springframework.context.support.ResourceBundleMessageSource">
+                <property name="basename">
+                    <value>aami</value>
+                </property>
+            </bean>
+        </property>
         <property name="basename">
-            <value>aami</value>
+            <value>apia</value>
         </property>
     </bean>
 

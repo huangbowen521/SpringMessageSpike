@@ -5,6 +5,8 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Created with IntelliJ IDEA.
  * User: twer
@@ -16,8 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class APIAController {
 
     @RequestMapping(value= "/index", method = RequestMethod.GET)
-    public String onPage(ModelMap model) {
-        model.put("brand","apia");
+    public String onPage(HttpServletRequest request) {
         return "index";
     }
 }
