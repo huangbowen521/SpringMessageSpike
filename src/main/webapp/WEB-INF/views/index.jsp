@@ -12,7 +12,10 @@
 </head>
 <body>
 
+<spring:message code="shared.label" />
+
 <spring:message code="helloWorld.label" />
+
 
 </body>
 </html>
