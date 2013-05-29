@@ -9,7 +9,6 @@
 
     <logger name="com.thoughtworks" level="TRACE"/>
 
-
     <root level="debug">
         <appender-ref ref="STDOUT" />
     </root>
