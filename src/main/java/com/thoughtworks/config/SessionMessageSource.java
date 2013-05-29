@@ -1,11 +1,24 @@
 package com.thoughtworks.config;
 
+import com.google.common.base.Predicate;
+import com.google.common.base.Strings;
+import com.google.common.collect.Collections2;
+import com.google.common.collect.Iterators;
+import com.google.common.collect.Lists;
+import com.sun.istack.internal.Nullable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.util.Assert;
+import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import java.util.Locale;
+import java.util.*;
+
+import static com.google.common.collect.Iterables.filter;
+import static com.google.common.collect.Iterables.indexOf;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,28 +28,55 @@ import java.util.Locale;
  */
 public class SessionMessageSource extends ResourceBundleMessageSource {
 
-    private String basename;
+    static final Logger logger = LoggerFactory.getLogger(SessionMessageSource.class);
+
+    private String[] basenames = new String[0];
 
     @Override
     protected String resolveCodeWithoutArguments(String code, Locale locale) {
         ServletRequestAttributes attr = (ServletRequestAttributes) RequestContextHolder.currentRequestAttributes();
-        String brand = (String) attr.getAttribute("brand", RequestAttributes.SCOPE_SESSION);
+        final String brand = (String) attr.getAttribute("brand", RequestAttributes.SCOPE_SESSION);
 
-        System.out.println("brand:" + brand);
+        logger.debug(brand);
 
-        if (basename.equals(brand)) {
-            return super.resolveCodeWithoutArguments(code, locale);
+        ArrayList<String> basenameList = Lists.newArrayList(basenames);
+
+        for(String basename : basenameList) {
+            if (StringUtils.endsWithIgnoreCase(basename,brand)) {
+                ResourceBundle bundle = getResourceBundle(basename, locale);
+                if (bundle != null) {
+                    return getStringOrNull(bundle, code);
+                }
+            }
         }
-        else
-        {
-            return getParentMessageSource().getMessage(code, null, locale);
-        }
 
+        return null;
     }
 
     @Override
-    public void setBasename(String basename) {
-        this.basename = basename;
-        super.setBasename(basename);
+    public void setBasenames(String... basenames) {
+        if (basenames != null) {
+            this.basenames = new String[basenames.length];
+            for (int i = 0; i < basenames.length; i++) {
+                String basename = basenames[i];
+                Assert.hasText(basename, "Basename must not be empty");
+                this.basenames[i] = basename.trim();
+            }
+        }
+        else {
+            this.basenames = new String[0];
+        }
+        super.setBasenames(basenames);
+    }
+
+    private String getStringOrNull(ResourceBundle bundle, String key) {
+        try {
+            return bundle.getString(key);
+        }
+        catch (MissingResourceException ex) {
+            // Assume key not found
+            // -> do NOT throw the exception to allow for checking parent message source.
+            return null;
+        }
     }
 }
