@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a3f3081-9059-45bd-97c1-a43c71075db0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/default.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringMessageSpike.iws" afterPath="$PROJECT_DIR$/SpringMessageSpike.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/aami.properties" afterPath="$PROJECT_DIR$/src/main/resources/aami.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-springmvc.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-springmvc.xml" />
     </list>
     <ignored path="SpringMessageSpike.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -198,10 +201,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SessionMessageSource.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SessionMessageSource.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/config/SessionMessageSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="26" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0">
+            <state line="30" column="5" selection-start="935" selection-end="2792" vertical-scroll-proportion="0.3723404">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,46 +212,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logback.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="348" selection-end="348" vertical-scroll-proportion="0.1849315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="19" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractMessageSource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.1.RELEASE/spring-context-3.2.1.RELEASE-sources.jar!/org/springframework/context/support/AbstractMessageSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="35" selection-start="7996" selection-end="8016" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageSource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.1.RELEASE/spring-context-3.2.1.RELEASE-sources.jar!/org/springframework/context/MessageSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="11" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AAMIController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/AAMIController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="65" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
+            <state line="21" column="13" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -266,7 +233,19 @@
       <file leaf-file-name="StartFlowController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/StartFlowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="59" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+            <state line="15" column="13" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-springmvc.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/application-springmvc.xml">
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1513" selection-end="1513" vertical-scroll-proportion="-23.863636">
               <folding />
             </state>
           </provider>
@@ -275,7 +254,16 @@
       <file leaf-file-name="aami.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/aami.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="38" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+            <state line="1" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/default.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="42" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -284,7 +272,34 @@
       <file leaf-file-name="apia.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/apia.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="-5.4545455">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -316,13 +331,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/AMMIController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/APIAController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/StartFlowController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/aami.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-springmvc.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/config/SessionMessageSource.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/AAMIController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/aami.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/default.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/application-springmvc.xml" />
       </list>
     </option>
   </component>
@@ -488,6 +504,14 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -626,6 +650,9 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.thoughtworks.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
@@ -916,41 +943,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="49" selection-start="362" selection-end="362" vertical-scroll-proportion="-10.625" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/application-servlet.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="-5.4545455" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/application-springmvc.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="21" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_06.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2826" column="30" selection-start="128626" selection-end="128626" vertical-scroll-proportion="0.0" />
@@ -973,16 +965,6 @@
         <state line="66" column="11" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/aami.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/apia.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="19" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0">
@@ -990,18 +972,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/config/SessionMessageSource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="26" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="9" column="34" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/AAMIController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="65" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1011,17 +991,71 @@
         <state line="17" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/StartFlowController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/AAMIController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="59" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+        <state line="21" column="13" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="348" selection-end="348" vertical-scroll-proportion="0.1849315">
+        <state line="8" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="-5.4545455" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/apia.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="16" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/aami.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/default.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="42" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/application-springmvc.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1513" selection-end="1513" vertical-scroll-proportion="-23.863636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/controller/StartFlowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/config/SessionMessageSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="5" selection-start="935" selection-end="2792" vertical-scroll-proportion="0.3723404">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

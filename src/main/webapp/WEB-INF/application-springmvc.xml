@@ -19,13 +19,21 @@
         <property name="parentMessageSource">
             <bean class="org.springframework.context.support.ResourceBundleMessageSource">
                 <property name="basename">
-                    <value>aami</value>
+                    <value>default</value>
                 </property>
             </bean>
         </property>
-        <property name="basename">
-            <value>apia</value>
+        <property name="basenames">
+            <list>
+                <value>aami</value>
+                <value>apia</value>
+            </list>
         </property>
     </bean>
+
+
+
+
+
 
 </beans>
