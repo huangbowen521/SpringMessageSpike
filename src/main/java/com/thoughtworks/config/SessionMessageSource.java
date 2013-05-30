@@ -1,11 +1,6 @@
 package com.thoughtworks.config;
 
-import com.google.common.base.Predicate;
-import com.google.common.base.Strings;
-import com.google.common.collect.Collections2;
-import com.google.common.collect.Iterators;
 import com.google.common.collect.Lists;
-import com.sun.istack.internal.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ResourceBundleMessageSource;
@@ -15,10 +10,10 @@ import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import java.util.*;
-
-import static com.google.common.collect.Iterables.filter;
-import static com.google.common.collect.Iterables.indexOf;
+import java.util.ArrayList;
+import java.util.Locale;
+import java.util.MissingResourceException;
+import java.util.ResourceBundle;
 
 /**
  * Created with IntelliJ IDEA.
@@ -41,8 +36,8 @@ public class SessionMessageSource extends ResourceBundleMessageSource {
 
         ArrayList<String> basenameList = Lists.newArrayList(basenames);
 
-        for(String basename : basenameList) {
-            if (StringUtils.endsWithIgnoreCase(basename,brand)) {
+        for (String basename : basenameList) {
+            if (StringUtils.endsWithIgnoreCase(basename, brand)) {
                 ResourceBundle bundle = getResourceBundle(basename, locale);
                 if (bundle != null) {
                     return getStringOrNull(bundle, code);
@@ -62,8 +57,7 @@ public class SessionMessageSource extends ResourceBundleMessageSource {
                 Assert.hasText(basename, "Basename must not be empty");
                 this.basenames[i] = basename.trim();
             }
-        }
-        else {
+        } else {
             this.basenames = new String[0];
         }
         super.setBasenames(basenames);
@@ -72,8 +66,7 @@ public class SessionMessageSource extends ResourceBundleMessageSource {
     private String getStringOrNull(ResourceBundle bundle, String key) {
         try {
             return bundle.getString(key);
-        }
-        catch (MissingResourceException ex) {
+        } catch (MissingResourceException ex) {
             // Assume key not found
             // -> do NOT throw the exception to allow for checking parent message source.
             return null;
