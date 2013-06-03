@@ -44,7 +44,7 @@ public class SessionMessageSourceTest {
     }
 
     @Test
-    public void should_get_value_from_current_brand() throws Exception {
+    public void should_get_value_from_current_brand() {
         //given
         when(requestAttributes.getAttribute(anyString(),anyInt())).thenReturn("brand1");
 
