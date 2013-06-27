@@ -1,8 +1,11 @@
+/*
+ * Copyright (c) 2013.
+ */
+
 package com.thoughtworks.config;
 
 import com.google.common.collect.Lists;
 import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
@@ -15,15 +18,15 @@ import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-/**
- * Created with IntelliJ IDEA.
- * User: twer
- * Date: 5/27/13
- * Time: 9:27 PM
+import static org.slf4j.LoggerFactory.getLogger;
+
+/*
+*
+*
  */
 public class SessionMessageSource extends ResourceBundleMessageSource {
 
-    static final Logger logger = LoggerFactory.getLogger(SessionMessageSource.class);
+    private static final Logger logger = getLogger(SessionMessageSource.class);
 
     private String[] basenames = new String[0];
 
