@@ -1,0 +1,8 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.controller.StartFlowControllerTest" tests="2" failures="0" errors="0" timestamp="2013-09-05T14:46:02" hostname="bowen-huang.local" time="0.019">
+  <properties/>
+  <testcase name="shouldOnAAMIPage" classname="com.thoughtworks.controller.StartFlowControllerTest" time="0.016"/>
+  <testcase name="shouldOnAPIAPage" classname="com.thoughtworks.controller.StartFlowControllerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

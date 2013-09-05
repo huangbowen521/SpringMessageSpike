@@ -1,0 +1,25 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.config.SessionMessageSourceTest" tests="2" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="bowen-huang.local" time="1.378392362157E9">
+  <properties/>
+  <testcase name="should_get_value_from_current_brand" classname="com.thoughtworks.config.SessionMessageSourceTest" time="0.697"/>
+  <testcase name="should_get_null_when_not_found_code" classname="com.thoughtworks.config.SessionMessageSourceTest" time="0.003"/>
+  <system-out><![CDATA[22:46:01,488 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+22:46:01,488 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+22:46:01,488 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/twer/sourcecode/SpringMessageSpike/build/resources/main/logback.xml]
+22:46:01,590 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+22:46:01,799 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+22:46:01,814 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+22:46:01,905 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+22:46:01,905 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+22:46:01,905 |-WARN in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+22:46:01,907 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.thoughtworks] to TRACE
+22:46:01,907 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+22:46:01,907 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+22:46:01,908 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+22:46:01,910 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7211d94c - Registering current configuration as safe fallback point
+
+22:46:02.141 [Test worker] DEBUG c.t.config.SessionMessageSource - brand1
+22:46:02.156 [Test worker] DEBUG c.t.config.SessionMessageSource - brand1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

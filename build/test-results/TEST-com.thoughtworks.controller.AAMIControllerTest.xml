@@ -1,0 +1,7 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.controller.AAMIControllerTest" tests="1" failures="0" errors="0" timestamp="2013-09-05T14:46:02" hostname="bowen-huang.local" time="0.032">
+  <properties/>
+  <testcase name="should_bind_to_index" classname="com.thoughtworks.controller.AAMIControllerTest" time="0.032"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,37 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    springVersion = '3.2.1.RELEASE'
+}
+
+test {
+    scanForTestClasses = false
+    include '**/*Test.class'
+}
+
+httpPort = 8090
+
+jettyRun {
+    reload = 'automatic'
+    scanIntervalSeconds = 1
+}
+
+dependencies {
+
+    compile 'com.google.guava:guava:14.0.1',
+            "org.springframework:spring-core:$springVersion",
+            "org.springframework:spring-webmvc:$springVersion",
+            "org.springframework:spring-web:$springVersion",
+            "org.springframework:spring-context:$springVersion",
+            "javax.servlet:servlet-api:2.5",
+            "ch.qos.logback:logback-classic:1.0.13"
+
+    testCompile "org.mockito:mockito-all:1.8.5", 'junit:junit:4.11'
+}

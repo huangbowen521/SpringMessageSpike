@@ -1,0 +1,13 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<testsuite name="com.thoughtworks.guava.PersonTest" tests="7" failures="0" errors="0" timestamp="2013-09-05T14:46:02" hostname="bowen-huang.local" time="0.053">
+  <properties/>
+  <testcase name="getPeopleNamesByAge" classname="com.thoughtworks.guava.PersonTest" time="0.043"/>
+  <testcase name="should_get_whole_names_of_people" classname="com.thoughtworks.guava.PersonTest" time="0.0"/>
+  <testcase name="should_get_correct_people" classname="com.thoughtworks.guava.PersonTest" time="0.0"/>
+  <testcase name="should_get_whole_ages_of_people_by_guava" classname="com.thoughtworks.guava.PersonTest" time="0.003"/>
+  <testcase name="should_get_whole_ages_of_people" classname="com.thoughtworks.guava.PersonTest" time="0.0"/>
+  <testcase name="should_get_whole_names_of_people_by_guava" classname="com.thoughtworks.guava.PersonTest" time="0.0"/>
+  <testcase name="should_get_correct_people_by_guava" classname="com.thoughtworks.guava.PersonTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -2,3 +2,5 @@ target/
 SpringMessageSpike.iws
 SpringMessageSpike.ipr
 SpringMessageSpike.iml
+.gradle/
+build/
