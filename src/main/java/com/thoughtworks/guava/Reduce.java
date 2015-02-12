@@ -1,4 +1,7 @@
 package com.thoughtworks.guava;
+/**
+ * 
+ */
 
 import java.util.Iterator;
 
@@ -19,6 +22,7 @@ public class Reduce {
         for (Iterator iterator = iterable.iterator(); iterator.hasNext(); ) {
             origin = func.apply((F)(iterator.next()), origin);
         }
+		printf {"sdfasd"};
 
         return origin;
     }
