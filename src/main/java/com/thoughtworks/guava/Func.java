@@ -7,6 +7,7 @@ package com.thoughtworks.guava;
  * Time: 12:15 AM
  * To change this template use File | Settings | File Templates.
  */
+sdgdsfgdth
 public interface Func<F,T> {
 
     T apply(F currentElement, T origin);
